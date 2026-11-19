@@ -17,7 +17,7 @@ You LOOK and REPORT. You do not fix.
 clicking anything that spends or sends, saving any image that shows an account id.
 
 **The mod:** `EiBlossomPrincess` on Raiden Shogun, installed and loaded. Its built files are in
-`Mods/GI/Ei/EiBlossomPrincess/Ei`.
+`AlbertGold Mods/GI/Ei/EiBlossomPrincess/Ei`.
 
 **The references:** `.refs/EiBlossomPrincess/`
 - `user_1.png` side view (her right), `user_2.png` side view (her left), `user_3.png` back: whole outfit
@@ -50,7 +50,7 @@ In the overworld, `hold w 2` walks; use it for a few frames of the dress in moti
 **Looking closer than the game allows:** the mod's own files, rendered offline, show texture detail at any zoom:
 
 ```
-python Tools/ModKit/view.py Mods/GI/Ei/EiBlossomPrincess/Ei EiBlossomPrincess --out <png> --yaw 0 90 180 \
+python Tools/ModKit/view.py AlbertGold Mods/GI/Ei/EiBlossomPrincess/Ei EiBlossomPrincess --out <png> --yaw 0 90 180 \
        --bounds -0.3 0.3 0.6 1.2 --size 700 700 --comps Body Dress --bg 0 220 0
 ```
 

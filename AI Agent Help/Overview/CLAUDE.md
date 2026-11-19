@@ -3,7 +3,7 @@
 ## Layout
 
 ```
-Mods/<Game>/<Character>/<Mod>/     generated mod folders (drop one into the loader's Mods folder)
+AlbertGold Mods/<Game>/<Character>/<Mod>/     generated mod folders (drop one into the loader's Mods folder)
 Tools/ModKit/modkit/               the toolkit: no mod-specific logic
     gimi.py                        Mesh: load / save GIMI buffers, connected islands
     ops.py                         parts, parametric surfaces, mirroring, weight transfer, UV baking, .dds writer

@@ -19,7 +19,7 @@ file relevant to your task first.**
 | Blender | [`AI Agent Help/Blender/CLAUDE.md`](AI%20Agent%20Help/Blender/CLAUDE.md) | using Blender (headless) as a build step: the cloth simulation wrapper, how to try settings quickly, where it worked (free-hanging cloth) and where it did not (fitted cloth over the bust) |
 | Private mods | [`AI Agent Help/Private/`](AI%20Agent%20Help/Private/README.md) | working on a mod that is not public (Ei's `EiBlossomPrincess` and its sword; Mavuika's `MavuikaCloudyWolf` with its helmet, motorcycle and sword): this folder exists only in the PRIVATE repo, `AlbertGold-Private-AI-Mods`, a superset of this one that merges from it |
 
-**A MOD IS BUILT, NEVER HAND-EDITED.** `Mods/<Game>/<Character>/<Mod>/` is the output of
+**A MOD IS BUILT, NEVER HAND-EDITED.** `AlbertGold Mods/<Game>/<Character>/<Mod>/` is the output of
 `Tools/Builders/<Mod>/build.py`. Change the recipe and rerun it.
 
 **LOOK BEFORE AND AFTER EVERY CHANGE.** `modkit.render` draws any mesh to a PNG from any angle in seconds. Every
