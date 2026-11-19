@@ -1,7 +1,7 @@
 """
 MavuikaCloudyWolf: Mavuika (GI) in Cloud Strife's Advent Children outfit.
 
-    python Tools/Builders/MavuikaCloudyWolf/build.py [--preview Docs/Previews/MavuikaCloudyWolf.png]
+    python Tools/Builders/MavuikaCloudyWolf/build.py [--preview Testing/Acceptance/Previews/MavuikaCloudyWolf.png]
 
 The outfit's mesh and textures are READ from a model the maintainer downloaded (FFVII Ever Crisis, an .fbx and
 .tga files; not stored in this repo) and fitted to Mavuika by this recipe:

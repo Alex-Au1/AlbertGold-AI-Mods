@@ -2,7 +2,7 @@
 MavuikaCloudyWolf / Sword: Mavuika's signature claymore "A Thousand Blazing Suns" turned into Cloud Strife's Fusion
 Sword (Final Fantasy VII Advent Children), assembled form.
 
-    python Tools/Builders/MavuikaCloudyWolfSword/build.py [--preview Docs/Previews/MavuikaCloudyWolfSword.png]
+    python Tools/Builders/MavuikaCloudyWolfSword/build.py [--preview Testing/Acceptance/Previews/MavuikaCloudyWolfSword.png]
 
 SOURCES
 - The game's weapon: a frame dump collected into ``dump/`` beside this file (it is not in GI-Model-Importer-Assets),

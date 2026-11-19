@@ -4,7 +4,7 @@ How `MavuikaCloudyWolf` (2026-11-15) put Cloud Strife's Advent Children outfit, 
 downloaded (FFVII Ever Crisis; the model is NOT stored in this repo), on Mavuika. Recipe:
 `Tools/Builders/MavuikaCloudyWolf/build.py`. Seen in the game the same day by a game subagent (its section below).
 
-Pictures: `Docs/Previews/MavuikaCloudyWolf.png` (reference row, mod without hair, mod), `_top.png`, `_legs.png`
+Pictures: `Testing/Acceptance/Previews/MavuikaCloudyWolf.png` (reference row, mod without hair, mod), `_top.png`, `_legs.png`
 (reference above, mod below, back faces magenta), `_weights.png`. The reference renders alone are in
 `Images/GI/Mavuika/MavuikaCloudyWolf/Reference_EverCrisisModel.png`.
 
@@ -193,7 +193,7 @@ What the five epochs did: 24 faults with 3 serious, then 21 / 1, 33 / 1 (a longe
 12 / 0. The armhole took three of the five. As with Ei's hair, the reviewer's count wanders; read what is NEW or
 GONE.
 
-## The first game audit (2026-11-15, a game subagent; `Docs/Previews/audit_MavuikaCloudyWolf_2026-11-15/`)
+## The first game audit (2026-11-15, a game subagent; `Testing/Acceptance/Previews/audit_MavuikaCloudyWolf_2026-11-15/`)
 
 Loaded with no 3DMigoto warnings (23 sections). Mavuika is in the maintainer's party (slot 4); `key c` opens the
 character screen on her. Her idle there is a 30 s loop (bike, stand, hand on hip, arm raised) with a moving
@@ -226,7 +226,7 @@ the collar's back a wide funnel (1 mm looser than her neck, was 4); the warmer's
 boot coming out behind (no cloth bones); the coat's lining shows as a brown strip between her legs from the
 front; hair through the holster; a holster stud visible beside her right flank; angular bust profile.
 
-## The second game audit (2026-11-15, a fresh game subagent; `Docs/Previews/audit2_MavuikaCloudyWolf_2026-11-15/`)
+## The second game audit (2026-11-15, a fresh game subagent; `Testing/Acceptance/Previews/audit2_MavuikaCloudyWolf_2026-11-15/`)
 
 On the build with the changes above. NOT clean: 4 serious, and the work stopped here for the maintainer.
 
@@ -256,7 +256,7 @@ the maintainer's party was left hurt. From now on a game brief says, as a hard r
 before any movement; never hold a movement key longer than 2 s; never move toward an edge, water or enemies; after
 every move take a shot and check HP; if HP drops, stop and report.** And say in the report whatever state changed.
 
-## The third game audit: an experiment, and the maintainer's coat bug (2026-11-15; `Docs/Previews/audit3_MavuikaCloudyWolf_2026-11-15/`)
+## The third game audit: an experiment, and the maintainer's coat bug (2026-11-15; `Testing/Acceptance/Previews/audit3_MavuikaCloudyWolf_2026-11-15/`)
 
 One build with a different treatment per piece (`MCW_INNER=exp`): coat and collar with NO inner copy, sleeve and
 warmer with copies that keep the outside's normals, holster with flipped copies as before. The game agent
@@ -291,7 +291,7 @@ answered eight questions with shots; movement was limited to 1 s paired steps, a
   next look: vertex colour alpha (the outline's width) 64 on the outfit instead of 128, and 0 round the
   collar's opening. Whether these marks are outline shells of layers underneath is a guess until that look.
 
-## The fourth game look (2026-11-15; `Docs/Previews/audit4_MavuikaCloudyWolf_2026-11-15/`): FRONT VIEW ONLY
+## The fourth game look (2026-11-15; `Testing/Acceptance/Previews/audit4_MavuikaCloudyWolf_2026-11-15/`): FRONT VIEW ONLY
 
 On the build with no inner copies, outline alpha 64 (0 at the collar) and the dulled metal. The agent stopped after
 the front view of the character screen: the screen switched to another character and back with no input from it
@@ -315,7 +315,7 @@ Sides, back and overworld were not seen, so the sleeve's back (the big black sla
   dark leather); the leather now "flat and grey-brown ... almost no highlight", coat and trousers one tone
   (gamma 0.70 and the matt light map went too far together).
 
-## The fifth game look (2026-11-17; `Docs/Previews/audit5_MavuikaCloudyWolf_2026-11-17/`): THE OUTFIT WAS MIRRORED
+## The fifth game look (2026-11-17; `Testing/Acceptance/Previews/audit5_MavuikaCloudyWolf_2026-11-17/`): THE OUTFIT WAS MIRRORED
 
 Same build as the fourth look. Left side, rear three-quarter and back on the character screen; then the screen
 switched to another character and back by itself again and the agent stopped (second time, same pattern, during a
@@ -355,7 +355,7 @@ a person: later briefs say to put `wait 2` between shots, re-select her and carr
 - For the sixth look the build has NO outline on the outfit (`MCW_OUTLINE=0`): if the black marks go, they are
   the outline pass; if they stay, they are the main pass.
 
-## The sixth game look (2026-11-17; `Docs/Previews/audit6_MavuikaCloudyWolf_2026-11-17/`): a full one
+## The sixth game look (2026-11-17; `Testing/Acceptance/Previews/audit6_MavuikaCloudyWolf_2026-11-17/`): a full one
 
 Mirrored-back build, no outline on the outfit (the test), wider throat strip. Character screen from five sides
 through the idle loop, overworld from four directions, two rounds of both movement pairs (a 1 s hold is a RUN).
@@ -396,7 +396,7 @@ The self-switch quirk did not occur with `wait 2` between shots. No HP lost.
   boots in a stride, holster silhouette, knit, buckles, emblem. Leather near black in daylight, coat and
   trousers one tone.
 
-## The seventh game look (2026-11-17; `Docs/Previews/audit7_MavuikaCloudyWolf_2026-11-17/`), and what the marks REALLY were
+## The seventh game look (2026-11-17; `Testing/Acceptance/Previews/audit7_MavuikaCloudyWolf_2026-11-17/`), and what the marks REALLY were
 
 Build: effects mask blanked, zip pull dropped, coat on thighs only, outline alpha 100.
 
@@ -428,7 +428,7 @@ Build: effects mask blanked, zip pull dropped, coat on thighs only, outline alph
   now (moved by hand, so GameView's journal no longer knows it: `reload --mod Mavuika` matches it; to unload, move
   the folder out by hand).
 
-## The eighth game look (2026-11-17; `Docs/Previews/audit8_MavuikaCloudyWolf_2026-11-17/`)
+## The eighth game look (2026-11-17; `Testing/Acceptance/Previews/audit8_MavuikaCloudyWolf_2026-11-17/`)
 
 Build with the throat patch and the top's inward faces turned out, loaded from `Mods\Mavuika\MavuikaCloudyWolf`.
 Seven series through the idle loop on the character screen, four movement pairs. No HP lost, no quirk.
@@ -475,7 +475,7 @@ The maintainer: "fix them" (the dark marks), and "the ears on mavuika are gone".
 - In the game the mod is loaded from `Mods\Mavuika\MavuikaCloudyWolf` beside the other sessions' parts; a reload
   there parses 60 sections, all clean.
 
-## The ninth game look (2026-11-18; `Docs/Previews/audit9_MavuikaCloudyWolf_2026-11-18/`): partial, the game was in use
+## The ninth game look (2026-11-18; `Testing/Acceptance/Previews/audit9_MavuikaCloudyWolf_2026-11-18/`): partial, the game was in use
 
 Character screen only. The agent stopped when the screen left the character menu by itself and a 3DMigoto reload
 overlay appeared that it had not caused (`g9_chk3.png`: `Unrecognised entry: resource\gimi\normalmap ... = null`,
@@ -510,7 +510,7 @@ start, so not from this look.
 
 ## The tenth game look, and the coat's weights smoothed (2026-11-18)
 
-- `Docs/Previews/audit10_MavuikaCloudyWolf_2026-11-18/`: front only. Throat and zip still clean; the black square and
+- `Testing/Acceptance/Previews/audit10_MavuikaCloudyWolf_2026-11-18/`: front only. Throat and zip still clean; the black square and
   slits on the coat's front panel in the BIKE pose still there, so copying the coat's weights onto the straps did
   not cure them. The look stopped when the character screen closed and reopened by itself after a drag.
 - **That self-closing is a quirk, not a person.** It has happened in four looks (5, 9, 10 and the fourth), always
@@ -526,7 +526,7 @@ start, so not from this look.
 
 ## The eleventh game look, and what the "quirk" really was (2026-11-18)
 
-- `Docs/Previews/audit11_MavuikaCloudyWolf_2026-11-18/`. **Ears: present in game**, both, from the side and behind
+- `Testing/Acceptance/Previews/audit11_MavuikaCloudyWolf_2026-11-18/`. **Ears: present in game**, both, from the side and behind
   (`g11_crop_earL_profile.png`, `g11_crop_earR_back.png`). Throat, zip and collar corner clean from front and
   both three-quarters. Coat's back: no square under the holster. Warmer quads not seen (views not as close as
   before).
@@ -544,7 +544,7 @@ start, so not from this look.
 
 ## The twelfth game look: the overworld at last, then another session's reload (2026-11-18)
 
-`Docs/Previews/audit12_MavuikaCloudyWolf_2026-11-18/`. Four directions and walking steps (a 1 s hold is a walk from
+`Testing/Acceptance/Previews/audit12_MavuikaCloudyWolf_2026-11-18/`. Four directions and walking steps (a 1 s hold is a walk from
 the bike). Stopped by a 3DMigoto reload it did not cause, the same `Unrecognised entry: resource\gimi\... = null`
 lines (another session's `.ini`), although the maintainer had given this session the game; the bike and sword
 sessions still showed "busy". No HP lost.

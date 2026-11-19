@@ -11,7 +11,7 @@ The mod skips every draw that binds that ib, which hides both parts in every pas
 
 Run:  python build.py [--dump <FrameAnalysis folder>]
 Writes the mod to Images/GI/Mavuika/MavuikaCloudyWolf/Helmet/ (where the maintainer asked for it) and a preview
-of what is hidden to Docs/Previews/MavuikaCloudyWolfHelmet.png.
+of what is hidden to Testing/Acceptance/Previews/MavuikaCloudyWolfHelmet.png.
 """
 import argparse
 import glob
@@ -27,7 +27,7 @@ from modkit import gimi, render  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(REPO, "Images", "GI", "Mavuika", "MavuikaCloudyWolf", "Helmet")
-PREVIEW = os.path.join(REPO, "Docs", "Previews", "MavuikaCloudyWolfHelmet.png")
+PREVIEW = os.path.join(REPO, "Testing", "Acceptance", "Previews", "MavuikaCloudyWolfHelmet.png")
 DEFAULT_DUMP = r"E:\Computer\Games\Wuthering Waves Mods\Importer\GIMI\FrameAnalysis-2026-11-17-221506"
 
 IB = "8f86c652"

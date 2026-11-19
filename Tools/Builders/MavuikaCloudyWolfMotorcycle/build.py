@@ -1,7 +1,7 @@
 """
 MavuikaCloudyWolf / Motorcycle: Mavuika's bike (GI skill object "MavuikasBike") turned into Cloud Strife's Fenrir.
 
-    python Tools/Builders/MavuikaCloudyWolfMotorcycle/build.py [--preview Docs/Previews/MavuikaCloudyWolfMotorcycle.png]
+    python Tools/Builders/MavuikaCloudyWolfMotorcycle/build.py [--preview Testing/Acceptance/Previews/MavuikaCloudyWolfMotorcycle.png]
 
 The SHAPE is read from a 3D-print model of the FFXIV "SDS Fenrir" mount that the maintainer downloaded (an ASCII
 .stl, ~10k triangles, no UVs; NOT stored in this repo). Everything else is made here:

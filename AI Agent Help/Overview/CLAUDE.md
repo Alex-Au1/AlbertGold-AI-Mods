@@ -11,7 +11,7 @@ Tools/ModKit/modkit/               the toolkit: no mod-specific logic
     blender.py                     Blender without a window: cloth_drape, fbx_dump (an .fbx as arrays)
 Tools/ModKit/view.py               render a BUILT mod folder: any angle, zoom, one draw alone, holes on green
 Tools/Builders/<Mod>/build.py      one recipe per mod; writes the mod folder and a preview
-Docs/Previews/                     the last preview sheets of each mod
+Testing/Acceptance/Previews/                     the last preview sheets of each mod
 AI Agent Help/                     these notes
 ```
 
@@ -24,7 +24,7 @@ texture and the `.ini` with today's hashes. A recipe reads it (`--src`), never m
 ## Running a build
 
 ```
-python Tools/Builders/EiBlossomPrincess/build.py --preview Docs/Previews/EiBlossomPrincess.png
+python Tools/Builders/EiBlossomPrincess/build.py --preview Testing/Acceptance/Previews/EiBlossomPrincess.png
 ```
 
 Python 3.9 with numpy and Pillow; nothing to install. About 30 s. The preview flag also writes `*_top.png`

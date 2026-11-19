@@ -2,7 +2,7 @@
 
 The first weapon mod here: `MavuikaCloudyWolf/Sword`, Mavuika's signature claymore "A Thousand Blazing Suns" made
 into Cloud Strife's Fusion Sword (Advent Children, assembled form). Recipe: `Tools/Builders/MavuikaCloudyWolfSword/build.py`;
-output `Mods/GI/Mavuika/MavuikaCloudyWolf/Sword/`. Pictures: `Docs/Previews/MavuikaCloudyWolfSword*.png` (main sheet:
+output `Mods/GI/Mavuika/MavuikaCloudyWolf/Sword/`. Pictures: `Testing/Acceptance/Previews/MavuikaCloudyWolfSword*.png` (main sheet:
 game weapon / reference model / mod in the same frame; `_close`: silhouettes game red over mod green, then the hilt
 culled on green). Reference shots: `Images/GI/Mavuika/MavuikaCloudyWolf/Sword/`.
 
@@ -223,7 +223,7 @@ Lesson: copy a band's ALPHA from the legend; copy its RGB only when the new mate
 "You can also use the other models to cross-validate and improve upon the sword." `measure/three_models.py` and
 `measure/profiles.py` (beside the recipe) dump all three through Blender, turn each so its long axis is up and its
 grip down, scale to length 2.0, and draw them side by side and as width / thickness profiles
-(`Docs/Previews/MavuikaCloudyWolfSword_three_models.png`, `_profiles.png`). `fbx_dump` now also writes each
+(`Testing/Acceptance/Previews/MavuikaCloudyWolfSword_three_models.png`, `_profiles.png`). `fbx_dump` now also writes each
 material slot's base colour (`<i>_matcol`), which is all the .blend has (no image textures).
 
 - AGREE: the silhouette, slot column, notch and steps; mid-blade width 0.236 / 0.240 / 0.246; the guard at the same

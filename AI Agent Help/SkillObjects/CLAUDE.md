@@ -2,7 +2,7 @@
 
 The first mod here that is not a character: `MavuikaCloudyWolf/Motorcycle`, Mavuika's bike (her skill object) made
 into Cloud Strife's Fenrir. Recipe: `Tools/Builders/MavuikaCloudyWolfMotorcycle/build.py`; output
-`Mods/GI/Mavuika/MavuikaCloudyWolf/Motorcycle/`. Pictures: `Docs/Previews/MavuikaCloudyWolfMotorcycle*.png`
+`Mods/GI/Mavuika/MavuikaCloudyWolf/Motorcycle/`. Pictures: `Testing/Acceptance/Previews/MavuikaCloudyWolfMotorcycle*.png`
 (`_review` = reference model over the mod, same views; `_close` = culled on green; `_bones` = bone per vertex,
 mod over game). References: `Images/GI/Mavuika/MavuikaCloudyWolf/Motorcycle/`.
 
@@ -127,7 +127,7 @@ mod over game). References: `Images/GI/Mavuika/MavuikaCloudyWolf/Motorcycle/`.
   front arms to follow the steering at the hub, epoch 5 asked them rigid on the body; they blend over their last
   17 cm. Whether the game steers bone 15 at all is not known.
 
-## The first game look (2026-11-17, a game subagent; `Docs/Previews/audit_MavuikaCloudyWolfMotorcycle_2026-11-17/`)
+## The first game look (2026-11-17, a game subagent; `Testing/Acceptance/Previews/audit_MavuikaCloudyWolfMotorcycle_2026-11-17/`)
 
 - **The mod shows**: the hashes from the assets repo are today's (also proven by a frame dump already on disk,
   `GIMI/FrameAnalysis-MavuikaBike-2026-11-17-195222`: ib `9bec497f`). No red bodywork is left. `cmp1` is the
@@ -408,7 +408,7 @@ mod over game). References: `Images/GI/Mavuika/MavuikaCloudyWolf/Motorcycle/`.
   discs now map radially across the hole swatch, and the can face planar over its own box. The skill-on swatch
   is `fire_burst()`: a white-gold core, five curling rays, a zig-zag crown of flame tips, deep red at the rim,
   after Mavuika's flame strokes. The plain set's hole swatch stays near-black.
-- Sheet: `Docs/Previews/MavuikaCloudyWolfMotorcycle_skill_off_on.png` (offline: mirrored, no bloom).
+- Sheet: `Testing/Acceptance/Previews/MavuikaCloudyWolfMotorcycle_skill_off_on.png` (offline: mirrored, no bloom).
 - **Three reviewer epochs (the maintainer: "light iterations, 3 epochs")**:
   - Epoch 1: the burst read as a FLOWER on the holes and cracked lava on the can face; a crease line and bevel
     spill on the can face; the tail lit vs off too alike.
@@ -573,7 +573,7 @@ mod over game). References: `Images/GI/Mavuika/MavuikaCloudyWolf/Motorcycle/`.
     pointing up.
   - Their outlines (stroke 9 % of the canvas) are made at 400 px and scaled down to 1.0 of the letters' height.
 - The two halves are drawn apart round it, sized from "MAV      999".
-- Checked by a crop of the diffuse: `Docs/Previews/MavuikaCloudyWolfMotorcycle_plate.png`, made through
+- Checked by a crop of the diffuse: `Testing/Acceptance/Previews/MavuikaCloudyWolfMotorcycle_plate.png`, made through
   `modkit.render.load_tex`. modkit has no DDS loader in `ops`.
 - No reviewer epochs (fast iteration).
 
@@ -585,7 +585,7 @@ mod over game). References: `Images/GI/Mavuika/MavuikaCloudyWolf/Motorcycle/`.
 - `MavuikaCloudyWolf/Helmet` hides the helmet she wears while riding (hold E in game to ride). Recipe:
   `Tools/Builders/MavuikaCloudyWolfHelmet/build.py`; output, where the maintainer asked for it,
   `Images/GI/Mavuika/MavuikaCloudyWolf/Helmet/MavuikaCloudyWolfHelmet.ini`; preview
-  `Docs/Previews/MavuikaCloudyWolfHelmet.png`. Built once, no reviewer epochs (the maintainer: "do no iterations").
+  `Testing/Acceptance/Previews/MavuikaCloudyWolfHelmet.png`. Built once, no reviewer epochs (the maintainer: "do no iterations").
 - **Not in the assets repo** (neither `SkillData` nor Mavuika's `hash.json`). No new dump was needed: the riding
   dumps already on disk have it (`FrameAnalysis-2026-11-17-221506` and `FenrirModRiding-...214513`, same hashes).
 - HOW it was found: the character skinning pass (vs `653c63ba4a73ca8b`, the first draws of the frame) lists every

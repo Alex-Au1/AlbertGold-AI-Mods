@@ -11,7 +11,7 @@ still the output of a recipe: a part goes out as arrays, a script does one job i
 - `build.py` with env `EI_DUMP=<path>` saves the jacket step's inputs (`<path>0.npz` worn, `<path>1.npz` off the
   shoulders: jacket, body, kimono), so a cloth setting can be tried in about a minute instead of a whole build.
 
-**State (updated 2026-11-11): one build uses it, for the cloth between her elbows (last section). The first trial, on the worn jacket, was not used.** `Docs/Previews/Blender_cloth_jacket_trial.png` is the best run on the
+**State (updated 2026-11-11): one build uses it, for the cloth between her elbows (last section). The first trial, on the worn jacket, was not used.** `Testing/Acceptance/Previews/Blender_cloth_jacket_trial.png` is the best run on the
 worn jacket (grow 0, 30 frames, bending 4, kimono as the only collider).
 
 ## What the trial taught
@@ -40,7 +40,7 @@ the case a simulation suits best.
 
 ## Second trial: a smooth shell front, then cloth (2026-11-11)
 
-Picture: `Docs/Previews/Blender_cloth_jacket_shell_trial.png` (rows: as built, shell, shell + cloth).
+Picture: `Testing/Acceptance/Previews/Blender_cloth_jacket_shell_trial.png` (rows: as built, shell, shell + cloth).
 
 - The jacket's front was moved onto a smooth shell first (`_shell_front` in the EiBlossomPrincess recipe, see
   [Mod Building](../ModBuilding/CLAUDE.md)), so the pattern no longer carries the fold under the bust.
@@ -56,8 +56,8 @@ Picture: `Docs/Previews/Blender_cloth_jacket_shell_trial.png` (rows: as built, s
 
 ## First use in a build: the cloth between her elbows (2026-11-11)
 
-Pictures: `Docs/Previews/Blender_cloth_elbow_trial.png` (top: grow 0.30, bending 0.5; bottom: grow 0.18,
-bending 4), `Docs/Previews/EiBlossomPrincess_jacket_elbows_cloth.png` (the build).
+Pictures: `Testing/Acceptance/Previews/Blender_cloth_elbow_trial.png` (top: grow 0.30, bending 0.5; bottom: grow 0.18,
+bending 4), `Testing/Acceptance/Previews/EiBlossomPrincess_jacket_elbows_cloth.png` (the build).
 
 - **State: the EiBlossomPrincess build now runs Blender** (about 45 s) for the jacket's third position: the
   ring of cloth from the belt out to the fur edge (`make_drape`, a flat shelf before) settles as cloth. When
