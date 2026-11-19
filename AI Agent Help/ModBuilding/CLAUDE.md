@@ -32,7 +32,7 @@ Everything below about the game's side is from Raiden's files; nothing is confir
 - Buffers: Position 40 bytes (pos, normal, tangent with w = -1), Blend 32 (4 weights, 4 group indices),
   Texcoord 20 (colour, uv, uv2). 118 vertex groups. Y up, **front is +z**, her right arm is at x < 0.
   (CHECK THE SIDE IN THE GAME: on Mavuika, 2026-11-17, the game showed +x as the character's RIGHT; "x < 0" here
-  was read off `modkit.render`, which draws a mirror image of the game. See Outfit Transfer.)
+  was read off `modkit.render`, which draws a mirror image of the game.)
   (Ei too, 2026-11-19: her fan is at +x, and in the maintainer's game screenshots the fan is at the viewer's LEFT
   from the front, i.e. on HER RIGHT. So +x is her right, as the build's `EAR_COVERED = -1` comments say, and "her
   right arm is at x < 0" above is wrong for the game. Every sheet of this mod is mirrored against the game:
@@ -64,7 +64,31 @@ Everything below about the game's side is from Raiden's files; nothing is confir
 - The preview's face is blank because the face is a separate draw that a mod does not carry.
 - **`modkit.render` is LEFT-RIGHT MIRRORED against the game** (2026-11-18): a license plate whose text read right
   offline read backwards in game. Judge anything with a handedness (text, logos, an asymmetric decal) in game or
-  in a render flipped in x. Details in [Skill Objects](../SkillObjects/CLAUDE.md).
+  in a render flipped in x.
+
+## Lessons from a mod built from an outside model (MavuikaCloudyWolf, 2026-11-15..18; the mod itself is private)
+
+- **An outside model is read through Blender:** `modkit.blender.fbx_dump(path, out_npz)` (`.fbx`, `.dae`, `.obj`,
+  `.blend`) gives positions, normals, UVs, triangles, materials, the four heaviest bone weights and the armature's
+  rest pose in the mod's coordinates. Its unit is the file's (an Ever Crisis model came out 100 times too small).
+- **The game is LEFT-handed against `modkit.render`:** +x is the character's RIGHT in game. An asymmetric garment
+  was built on the wrong side and looked right in every offline sheet; the first game shot of anything asymmetric
+  answers "which side is it on" before anything else.
+- **The game shades a back face black** (or gold or green, by the light) on these draws, where the model's own
+  game drew both sides. A back face that a viewer OUTSIDE the character can see is a fault: count, per triangle,
+  the pixels seen from its front and from its back over 24 views (8 yaws x 3 pitches, z-buffered) and turn the
+  ones seen mostly from behind. Rules by direction (away from the body's axis, away from a plate's middle) were
+  measured and failed. Inner copies of single-sided cloth drew black too and were removed.
+- **A character's other components are read through YOUR UVs:** the assets repo's `hash.json` can list a component
+  the identity mod does not draw (Mavuika's `NatlanFX` effects mask): the shader samples it with the new mesh's
+  UVs and its shapes appear as marks. Replace it by hash with a blank texture.
+- **A hole in her own body** under a removed accessory (no skin under a choker) shows the inside of the garment
+  behind; it is found by drawing each draw alone, back faces marked, at the spot. Make the missing surface.
+- **Weights from nearest neighbours jump at a junction of groups** (pelvis, spine, both thighs); measure the largest
+  weight difference along each triangle's edges and smooth the garment's weights over its own surface; parts that
+  lie on cloth take that cloth's weights.
+- **Several sessions can drive one game at once:** screens closing, characters switching, camera turns and reloads
+  you did not cause are another session. Ask the maintainer before using the game.
 
 ## What the game showed (2026-11-10)
 
